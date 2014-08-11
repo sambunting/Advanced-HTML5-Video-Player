@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css">
+			#video-player {  width: 50%; margin: 0 auto;}
+		</style>
+	</head>
+	<body>
+		<div id="video-player">
+			<video id="video">
+				<source src="movie.mp4" type="video/mp4">
+				<source src="movie.webm" type="video/webm">
+				<source src="movie.ogg" type="video/ogg">
+			</video>
+			<div id="controlls">
+				<div id="progressbar">
+					<div id="progressbar-completed"></div>
+					<div id="progressbar-remaining"></div>
+				</div>
+				<div id="mainbar">
+					<img id="playPause" src="video-player/images/btn-play.png">
+				</div>
+			</div>
+		</div>
+		<link rel="stylesheet" type="text/css" href="video-player/stylesheet.css">
+		<script type="text/javascript" src="video-player/javascript.js"></script>
+	</body>
+</html>
