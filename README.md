@@ -10,9 +10,9 @@ Useage
 
 1) Download the **video-player** folder and copy and paste the code from **index.html** and into your document.
 
-2) Edit the several `source` tags inside the `video` element. It is reccomended to do all three and convert the videos to MP4, WebM and Ogg Theora because it will support much older browsers.
+2) Edit the several `source` tags inside the `div` element with an id of `video-player`. It is reccomended to do all three and convert the videos to MP4, WebM and Ogg Theora because it will support much older browsers.
 
-3) Copy and paste the folowing code **beneath** the code that you coppid down earlier.
+3) Copy and paste the folowing code **beneath** the code that you coppied down earlier.
 
     <link rel="stylesheet" type="text/css" href="video-player/stylesheet.css">
     <script type="text/javascript" src="video-player/javascript.js"></script>
