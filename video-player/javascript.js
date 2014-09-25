@@ -10,12 +10,15 @@ var volumeBarCompleted = document.getElementById("soundbar");
 var volumeBarRemaining = document.getElementById("soundbar-remaining");
 var playpause = document.getElementById("playPause");
 var muteUnmute = document.getElementById("volume-icon");
+var fullscreen = document.getElementById("fullscreen-icon");
 
 video.addEventListener("click", playPause, false);
+video.addEventListener("dblclick", toggleFullScreen, false);
 playpause.addEventListener("click", playPause, false);
 progressbar.addEventListener("click", seekVideo, false);
 volumeBar.addEventListener("click", changeVolume, false);
 muteUnmute.addEventListener("click", mute, false);
+fullscreen.addEventListener("click", toggleFullScreen, false);
 
 function playPause () {
 	if (video.paused) {
@@ -105,7 +108,7 @@ function updateVolumeBar() {
 
 }
 
-function mute () {
+function mute() {
 	if (volumeStatus != 0) {
 		muteUnmute.src = "video-player/images/btn-volume-0.png";
 		volumeStatus = 0;
@@ -114,6 +117,16 @@ function mute () {
 		muteUnmute.src = "video-player/images/btn-volume-3.png";
 		volumeStatus = 3;
 		video.volume = 0.8;
+	}
+}
+
+function toggleFullScreen() {
+	if (video.requestFullScreen) {
+		video.requestFullScreen();
+	} else if (video.webkitRequestFullScreen) {
+		video.webkitRequestFullScreen();
+	} else if (video.mozRequestFullScreen) {
+		video.mozRequestFullScreen();
 	}
 }
 

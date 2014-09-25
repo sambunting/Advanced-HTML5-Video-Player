@@ -9,8 +9,9 @@
 		#video-player #controlls #mainbar { background-color: black; padding: 5px; height: 32px;}
 			#video-player #controlls #mainbar img { cursor: pointer;}
 
-			#video-player #controlls #mainbar #volume {float: right; width: 170px);}
-				#video-player #controlls #mainbar #volume img { margin-right: 10px;}
-				#video-player #controlls #mainbar #volume #volume-bar { width: 100px; float: right; cursor: pointer;}
-					#video-player #controlls #mainbar #volume #volume-bar #soundbar { width: 80%; height: 10px; background-color: blue; margin-top: 11px; float: left;}
-					#video-player #controlls #mainbar #volume #volume-bar #soundbar-remaining { width: 20%; height: 10px; background-color: gray; margin-top: 11px; float: right;}
+			#video-player #controlls #mainbar #right {float: right; width: 170px);}
+				#video-player #controlls #mainbar #right img { margin-right: 10px;}
+				#video-player #controlls #mainbar #right #fullscreen-icon { float: right; margin-left: 10px;}
+				#video-player #controlls #mainbar #right #volume-bar { width: 100px; float: right; cursor: pointer;}
+					#video-player #controlls #mainbar #right #volume-bar #soundbar { width: 80%; height: 10px; background-color: blue; margin-top: 11px; float: left;}
+					#video-player #controlls #mainbar #right #volume-bar #soundbar-remaining { width: 20%; height: 10px; background-color: gray; margin-top: 11px; float: right;}
